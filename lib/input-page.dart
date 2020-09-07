@@ -20,36 +20,18 @@ class _InputPageState extends State<InputPage> {
               children: [
                 Expanded(
                   flex: 1,
-                  child: Container(
-                    margin: EdgeInsets.all(15.0),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10.0),
-                      color: Color(0xFF1D1E33),
-                    ),
-                  ),
+                  child: ReusableCard(color: Color(0xFF1D1E33),),
                 ),
                 Expanded(
                   flex: 1,
-                  child: Container(
-                    margin: EdgeInsets.all(15.0),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10.0),
-                      color: Color(0xFF1D1E33),
-                    ),
-                  ),
+                  child: ReusableCard(color: Color(0xFF1D1E33),),
                 ),
               ],
             ),
           ),
           Expanded(
             flex: 1,
-            child: Container(
-              margin: EdgeInsets.all(15.0),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10.0),
-                color: Color(0xFF1D1E33),
-              ),
-            ),
+            child: ReusableCard(color: Color(0xFF1D1E33),),
           ),
           Expanded(
             child: Row(
@@ -57,31 +39,34 @@ class _InputPageState extends State<InputPage> {
               children: [
                 Expanded(
                   flex: 1,
-                  child: Container(
-                    margin: EdgeInsets.all(15.0),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10.0),
-                      color: Color(0xFF1D1E33),
-                    ),
+                  child: ReusableCard(color: Color(0xFF1D1E33),
                   ),
                 ),
                 Expanded(
                   flex: 1,
-                  child: Container(
-                    margin: EdgeInsets.all(15.0),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10.0),
-                      color: Color(0xFF1D1E33),
-                    ),
-                  ),
+                  child: ReusableCard(color: Color(0xFF1D1E33),),
                 ),
               ],
             ),
           ),
         ],
       ),
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
+    );
+  }
+}
+
+class ReusableCard extends StatelessWidget {
+
+  ReusableCard({@required this.color});
+
+  final Color color;
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.all(15.0),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10.0),
+        color: color,
       ),
     );
   }
