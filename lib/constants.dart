@@ -12,7 +12,7 @@ const kLabelTextStyle = TextStyle(
 );
 
 const kNumberTextStyle = TextStyle(
-    fontSize: 50.0,
+    fontSize: 42.0,
     fontWeight: FontWeight.w900
 );
 
@@ -33,10 +33,10 @@ const kResultTextStyle = TextStyle(
 );
 
 const kBMITextstyle = TextStyle(
-  fontSize: 100.0,
+  fontSize: 80.0,
   fontWeight: FontWeight.bold
 );
 
 const kBodyTextStyle = TextStyle(
-  fontSize: 22.0
+  fontSize: 20.0
 );

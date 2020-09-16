@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../constants.dart';
 
 class RoundIconButton extends StatelessWidget {
 
@@ -15,8 +14,8 @@ class RoundIconButton extends StatelessWidget {
       onPressed: onPressed,
       elevation: 0.0,
       constraints: BoxConstraints.tightFor(
-          width: 56.0,
-          height: 56.0
+          width: 44.0,
+          height: 44.0
       ),
       shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10.0)
